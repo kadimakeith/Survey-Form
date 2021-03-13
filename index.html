@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./styles.css'>
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="">
+            <h1 id = "title">Survey Form</h1>
+        </div>
+        
+        <p id="description">Fill the Form below</p>
+        <form id="survey-form" >
+            <div class="form-control">
+                <label for="name" class="" id='name-label'>Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                
+                <label for="email" class="" id='email-label'>E-Mail</label>
+                <input type="email" id="email" placeholder="Enter your E-mail" required>
+                  
+                <label for="number" class="" id = "number-label">Age</label>
+                <input type="number" id="number" placeholder="Number" min=16 max=35>
+                  
+                <label for="countries" class="" id="country-label">Country of origin</label>
+                <select name="countries" id='dropdown' required>
+                    <option value="" disabled selected hidden>Select an option</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Rwanda">Rwanda</option>
+                </select>                 
+                
+                <label style='font-weight: bold;'>What is your gender?</label><br> 
+                Male: <input type="radio" name='radio' value='Male'>
+                Female: <input type="radio" name='radio' value='Female'>
+                Not Sure: <input type="radio" name='radio' value='Not'>
+
+                <label for="radio" class="" id='email-label' style='font-weight: bold;'>What would you want to learn? </label> <br>
+                Responsive Web Design: <input type="checkbox" name='checkbox' value='Web'> 
+                API and Microservices: <input type="checkbox" name='checkbox' value='API'>
+                Quality Assurance: <input type="checkbox" name='checkbox' value='Quality'>
+                Algorithms and Data Structures: <input type="checkbox" name='checkbox' value='Algorithms'>
+                Data Visualization:<input type="checkbox" name='checkbox' value='Data'>
+                Scientific Computing:<input type="checkbox" name='checkbox' value='Web'>
+
+                <label>Any comments or Suggestions</label>
+                <textarea name="message" rows="10" cols="30">                    
+                </textarea>
+
+                
+                <input type='submit' id='submit'>
+                             
+            </div>
+            
+
+
+        </form>
+    </div>
+    
+</body>
+<Script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></Script>
+</html>
